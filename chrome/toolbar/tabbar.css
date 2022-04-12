@@ -7,7 +7,7 @@
   --tab-block-margin: 8px !important;
 
   --uc-toolbarbutton-inner-padding: 6px !important;
-  --toolbarbutton-border-radius: 2px !important;
+  --toolbarbutton-border-radius: 5px !important;
   --tabs-navbar-shadow-size: 0 !important;
 }
 
@@ -105,10 +105,10 @@
 }
 
 /* fix colours */
-#navigator-toolbox:not(:-moz-lwtheme) {
+/*#navigator-toolbox:not(:-moz-lwtheme) {
   background-color: var(--lwt-accent-color) !important;
   color: var(--lwt-text-color) !important;
-}
+}*/
 
 .tab-label-container:not([selected="true"], [multiselected]) {
   opacity: 1 !important;

@@ -1,9 +1,9 @@
 /* EdgeFr-Fox by bmFtZQ - popup.css */
 
 :root {
-  --arrowpanel-border-radius: 4px !important;
-  --panel-subview-body-padding: 4px 0 !important;
-  --arrowpanel-menuitem-border-radius: 0 !important;
+  /*--arrowpanel-border-radius: 4px !important;*/
+  --panel-subview-body-padding: 4px 4px !important;
+  /*--arrowpanel-menuitem-border-radius: 4px !important;*/
   --arrowpanel-menuitem-margin: 0 !important;
   --arrowpanel-menuitem-padding-block: 8px !important;
   --arrowpanel-menuitem-padding-inline: 14px !important;
@@ -79,9 +79,10 @@
   padding: var(--uc-panel-zoom-button-padding) calc(var(--uc-panel-zoom-button-padding) / 2) !important;
 }
 
-#appMenu-zoomReduce-button2,
+/*#appMenu-zoomReduce-button2,*/
 #appMenu-fullscreen-button2 {
   border-inline-start: 1px solid var(--panel-separator-color) !important;
+  border-radius: 0;
 }
 
 #appMenu-zoomReset-button2 {
@@ -189,7 +190,7 @@
 
 #downloadsPanel-blockedSubview,
 #downloadsPanel-mainView {
-  padding: var(--panel-separator-margin-vertical) 0 0 !important;
+  padding: var(--panel-separator-margin-vertical) 4px 4px !important;
 }
 
 #emptyDownloads {

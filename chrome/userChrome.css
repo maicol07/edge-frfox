@@ -17,9 +17,9 @@
 
 /* force tabs to toolbar bg (useful for proton themes) (might experience some
 bugs with certain themes eg. dark text on dark background.) */
-:root {
+/*:root {
   --lwt-selected-tab-background-color: unset !important;
-}
+}*/
 
 /* hide firefox account button when not in private mode (useful as a private
 browsing indicator) */

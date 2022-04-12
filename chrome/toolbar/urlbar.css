@@ -8,7 +8,7 @@
   --uc-urlbar-icon-inline-padding: calc(var(--uc-toolbarbutton-inner-inline-padding) - 2px) !important;
   --identity-box-margin-inline: 2px !important;
 }
-
+/*
 :root:not(:-moz-lwtheme) #urlbar {
   --urlbar-box-bgcolor: unset !important;
 }
@@ -56,7 +56,7 @@
 }
 
 /* breakout */
-#urlbar[breakout][breakout-extend] {
+/*#urlbar[breakout][breakout-extend] {
   left: 0 !important;
   width: 100% !important;
 }
@@ -83,7 +83,7 @@
   --urlbar-toolbar-height: calc(8px + 16px + var(--toolbarbutton-inner-padding) * 2) !important;
   --urlbar-height: calc(16px + var(--toolbarbutton-inner-padding) * 2) !important;
 }
-
+/*
 #urlbar-container,
 #search-container {
   margin-inline: 6px !important;
@@ -110,7 +110,7 @@
 }
 
 /* workaround for bringing lock icon and permission icon closer */
-#identity-permission-box {
+/*#identity-permission-box {
   padding-inline: 2px var(--uc-urlbar-icon-inline-padding) !important;
   margin-inline-start: -8px !important;
 }
@@ -122,7 +122,7 @@
 
 
 /* move tracking protection button */
-#tracking-protection-icon-container,
+/*#tracking-protection-icon-container,
 #page-action-buttons {
   -moz-box-ordinal-group: 2 !important;
 }
@@ -165,3 +165,4 @@
   margin-block: 0 !important;
   margin-inline: 0 !important;
 }
+*/
