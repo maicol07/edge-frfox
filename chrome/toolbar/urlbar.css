@@ -8,7 +8,7 @@
   --uc-urlbar-icon-inline-padding: calc(var(--uc-toolbarbutton-inner-inline-padding) - 2px) !important;
   --identity-box-margin-inline: 2px !important;
 }
-/*
+
 :root:not(:-moz-lwtheme) #urlbar {
   --urlbar-box-bgcolor: unset !important;
 }
@@ -32,7 +32,7 @@
   width: 100% !important;
   border-inline: 0 !important;
 }
-
+/*
 .urlbarView-row {
   padding-block: 0 !important;
 }
@@ -56,7 +56,7 @@
 }
 
 /* breakout */
-/*#urlbar[breakout][breakout-extend] {
+#urlbar[breakout][breakout-extend] {
   left: 0 !important;
   width: 100% !important;
 }
