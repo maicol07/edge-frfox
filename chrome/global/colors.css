@@ -6,7 +6,7 @@
     --lwt-accent-color: #cecece !important;
     --lwt-accent-color-inactive: #e8e8e8 !important;
     --lwt-text-color: #000 !important;
-    --lwt-toolbar-bgcolor: #f7f7f7 !important;
+    --lwt-toolbar-bgcolor: transparent !important;
     --toolbar-bgcolor: var(--lwt-toolbar-bgcolor) !important;
     --toolbar-color: #000 !important;
     --toolbarbutton-icon-fill: #000 !important;
@@ -14,8 +14,8 @@
     --lwt-toolbarbutton-icon-fill-attention: #0078D4 !important;
     --toolbarbutton-icon-fill-attention: #0078D4 !important;
     --lwt-tab-text: var(--toolbar-color) !important;
-    --lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
-    --tab-selected-bgcolor: var(--toolbar-bgcolor) !important;
+    --lwt-selected-tab-background-color: rgba(255, 255, 255, 0.9) !important;
+    --tab-selected-bgcolor: var(--lwt-toolbar-bgcolor) !important;
     --toolbar-field-background-color: #fff !important;
     --toolbar-field-color: #000 !important;
     --toolbar-field-border-color: #0000 !important;
@@ -74,7 +74,7 @@
     --lwt-accent-color: #1C1C1C !important;
     --lwt-accent-color-inactive: #2e2e2e !important;
     --lwt-text-color: #E5E5E5 !important;
-    --lwt-toolbar-bgcolor: #3B3B3B !important;
+    --lwt-toolbar-bgcolor: transparent !important;
     --toolbar-bgcolor: var(--lwt-toolbar-bgcolor) !important;
     --toolbar-color: #fff !important;
     --toolbarbutton-icon-fill: #fff !important;
@@ -82,8 +82,8 @@
     --lwt-toolbarbutton-icon-fill-attention: #4C98D1 !important;
     --toolbarbutton-icon-fill-attention: #4C98D1 !important;
     --lwt-tab-text: var(--toolbar-color) !important;
-    --lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
-    --tab-selected-bgcolor: var(--toolbar-bgcolor) !important;
+    --lwt-selected-tab-background-color: rgba(59, 59, 59, 0.75) !important;
+    --tab-selected-bgcolor: var(--tab-selected-bgcolor) !important;
     --toolbar-field-background-color: #2B2B2B !important;
     --toolbar-field-color: #fff !important;
     --toolbar-field-border-color: #0000 !important;
