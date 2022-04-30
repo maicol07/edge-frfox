@@ -32,22 +32,22 @@
 @supports not -moz-bool-pref("layout.css.osx-font-smoothing.enabled") {
   :root:is([inFullscreen], :not([tabsintitlebar]), [sizemode="maximized"]) #titlebar,
   #toolbar-menubar:not([inactive])+#TabsToolbar {
-    --tab-block-margin: 0px !important;
+    --tab-block-margin: 4px !important;
   }
 }
 
 .tab-background {
   border-radius: var(--tab-border-radius);
-  border-bottom-left-radius: 0 !important;
+  /*border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  margin-block: 0 !important;
+  margin-block: 0 !important;*/
   border: 0 !important;
   position: relative !important;
   --uc-tab-corner-bg: transparent;
 }
 
 /* rounded bottom corners */
-.tab-background::before,
+/*.tab-background::before,
 .tab-background::after {
   content: "" !important;
   display: block !important;
@@ -57,7 +57,7 @@
   bottom: 0 !important;
   pointer-events: none !important;
   clip-path: inset(0);
-}
+}*/
 
 .tab-background::before {
   border-bottom-right-radius: var(--tab-border-radius) !important;
@@ -73,7 +73,7 @@
   box-shadow: -4px 4px 0 4px var(--uc-tab-corner-bg) !important;
 }
 
-.tabbrowser-tab[selected="true"] .tab-background {
+/*.tabbrowser-tab[selected="true"] .tab-background {
   --uc-tab-corner-bg: var(--lwt-selected-tab-background-color, var(--toolbar-bgcolor));
 }
 
@@ -93,7 +93,7 @@
 
 .tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"], [multiselected]) {
   --uc-tab-corner-bg: color-mix(in srgb, currentColor 11%, transparent)
-}
+}*/
 
 #tabbrowser-tabs,
 #TabsToolbar #TabsToolbar-customization-target>.toolbarbutton-1 {
@@ -289,7 +289,7 @@ toolbarbutton[part="scrollbutton-down"] {
 
 
 .tabbrowser-tab:is([visuallyselected="true"], [multiselected])>.tab-stack>.tab-background {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2), 0 0px 2px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 #titlebar {
