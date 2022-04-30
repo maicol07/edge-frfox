@@ -73,7 +73,7 @@
   box-shadow: -4px 4px 0 4px var(--uc-tab-corner-bg) !important;
 }
 
-/*.tabbrowser-tab[selected="true"] .tab-background {
+.tabbrowser-tab[selected="true"] .tab-background {
   --uc-tab-corner-bg: var(--lwt-selected-tab-background-color, var(--toolbar-bgcolor));
 }
 
@@ -83,7 +83,7 @@
 
 #tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[multiselected="true"]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[selected="true"]:-moz-lwtheme {
-  background-image: linear-gradient(var(--lwt-selected-tab-background-color, transparent), var(--lwt-selected-tab-background-color, transparent)), linear-gradient(var(--toolbar-bgcolor), var(--toolbar-bgcolor)), var(--lwt-header-image, none);
+  background-image: linear-gradient(var(--lwt-selected-tab-background-color, transparent), var(--lwt-selected-tab-background-color, transparent)), var(--lwt-header-image, none);
   --uc-tab-corner-bg: var(--lwt-selected-tab-background-color, var(--toolbar-bgcolor));
 }
 
@@ -93,7 +93,7 @@
 
 .tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"], [multiselected]) {
   --uc-tab-corner-bg: color-mix(in srgb, currentColor 11%, transparent)
-}*/
+}
 
 #tabbrowser-tabs,
 #TabsToolbar #TabsToolbar-customization-target>.toolbarbutton-1 {
