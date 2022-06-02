@@ -224,7 +224,7 @@ toolbarbutton[part="scrollbutton-down"] {
   display: block;
   height: 20px;
   right: 0;
-  top: 6px;
+  top: 10px;
   border-right: 1px solid color-mix(in srgb, currentColor 34%, transparent);
 }
 
