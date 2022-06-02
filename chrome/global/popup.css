@@ -198,7 +198,7 @@
 }
 
 /* context menus */
-@media (-moz-os-version: windows-win10) {
+@media (-moz-windows-compositor) {
   menupopup {
     --panel-color: var(--arrowpanel-color) !important;
     --panel-border-radius: 4px !important;
@@ -216,12 +216,6 @@
 }
 
 /* auto complete popup */
-menupopup,
-panel[type="autocomplete-richlistbox"] {
-  /* -moz-window-shadow: none !important; */
-  appearance: none !important;
-}
-
 #PopupAutoComplete>.autocomplete-richlistbox {
   background: var(--arrowpanel-background) !important;
   color: var(--arrowpanel-color) !important;
