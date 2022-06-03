@@ -32,7 +32,7 @@
 @supports not -moz-bool-pref("layout.css.osx-font-smoothing.enabled") {
   :root:is([inFullscreen], :not([tabsintitlebar]), [sizemode="maximized"]) #titlebar,
   #toolbar-menubar:not([inactive])+#TabsToolbar {
-    --tab-block-margin: 4px !important;
+    --tab-block-margin: 0 !important;
   }
 }
 
@@ -224,7 +224,7 @@ toolbarbutton[part="scrollbutton-down"] {
   display: block;
   height: 20px;
   right: 0;
-  top: 10px;
+  top: 6px;
   border-right: 1px solid color-mix(in srgb, currentColor 34%, transparent);
 }
 

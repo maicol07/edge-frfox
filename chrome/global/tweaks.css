@@ -3,7 +3,7 @@
 /* disable drag space above tabs */
 @supports -moz-bool-pref("uc.tweak.disable-drag-space") {
   :root #titlebar {
-    --tab-block-margin: 0px !important;
+    --tab-block-margin: 0 !important;
   }
 }
 
