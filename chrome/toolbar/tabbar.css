@@ -292,17 +292,17 @@ toolbarbutton[part="scrollbutton-down"] {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
-#titlebar {
+/*#titlebar {
   box-shadow: 0 -3px 2px -3px rgba(0, 0, 0, 0.2) inset !important;
-}
+}*/
 
 :root[lwthemetextcolor="bright"] .tabbrowser-tab:is([visuallyselected="true"], [multiselected])>.tab-stack>.tab-background {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.55), 0 0px 2px rgba(0, 0, 0, 0.6) !important;
 }
 
-:root[lwthemetextcolor="bright"] #titlebar {
+/*:root[lwthemetextcolor="bright"] #titlebar {
   box-shadow: 0 -3px 2px -3px rgba(0, 0, 0, 0.75) inset !important;
-}
+}*/
 
 /* force inactive window on default theme */
 @media not (-moz-os-version: windows-win7) {
