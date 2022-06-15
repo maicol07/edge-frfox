@@ -320,3 +320,7 @@ toolbarbutton[part="scrollbutton-down"] {
 .tab-content {
   padding-inline: var(--inline-tab-padding) 0 !important;
 }
+
+#tabbrowser-tabs #tabs-newtab-button {
+  margin-top: 6px !important;
+}
