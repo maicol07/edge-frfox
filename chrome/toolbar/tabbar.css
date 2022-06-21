@@ -292,6 +292,10 @@ toolbarbutton[part="scrollbutton-down"] {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
+.tabbrowser-tab:is([visuallyselected="true"], [multiselected])>.tab-stack>.tab-content .tab-text.tab-label {
+  font-weight: 600;
+}
+
 /*#titlebar {
   box-shadow: 0 -3px 2px -3px rgba(0, 0, 0, 0.2) inset !important;
 }*/
