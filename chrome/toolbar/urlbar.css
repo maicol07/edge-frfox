@@ -13,12 +13,19 @@
   --urlbar-box-bgcolor: unset !important;
 }
 
-#urlbar[focused="true"]:not([suppress-focus-border])>#urlbar-background:not(:-moz-lwtheme),
-#searchbar:not(:-moz-lwtheme):focus-within {
+:root[style*="--lwt-accent-color: rgb(240, 240, 244)"] #urlbar[focused="true"]:not([suppress-focus-border])>#urlbar-background,
+:root[style*="--lwt-accent-color: rgb(240, 240, 244)"] #searchbar:focus-within {
   outline-color: color-mix(in srgb, var(--toolbar-field-focus-border-color) 50%, transparent) !important;
 }
 
-:root:not([lwthemetextcolor="bright"]) #urlbar-background {
+@media not (-moz-gtk-csd-available) {
+  #urlbar[focused="true"]:not([suppress-focus-border])>#urlbar-background:not(:-moz-lwtheme),
+  #searchbar:not(:-moz-lwtheme):focus-within {
+    outline-color: color-mix(in srgb, var(--toolbar-field-focus-border-color) 50%, transparent) !important;
+  }
+}
+
+:root:not([lwtheme-brighttext="true"]) #urlbar-background {
   box-shadow: var(--uc-urlbar-shadow, none);
 }
 
@@ -32,7 +39,7 @@
   width: 100% !important;
   border-inline: 0 !important;
 }
-/*
+
 .urlbarView-row {
   padding-block: 0 !important;
 }
@@ -83,7 +90,7 @@
   --urlbar-toolbar-height: calc(8px + 16px + var(--toolbarbutton-inner-padding) * 2) !important;
   --urlbar-height: calc(16px + var(--toolbarbutton-inner-padding) * 2) !important;
 }
-/*
+
 #urlbar-container,
 #search-container {
   margin-inline: 6px !important;
@@ -118,9 +125,8 @@
   border-radius: calc(var(--toolbarbutton-border-radius) + 2px) !important;
 }
 
-
 /* move tracking protection button */
-/*#tracking-protection-icon-container,
+#tracking-protection-icon-container,
 #page-action-buttons {
   -moz-box-ordinal-group: 2 !important;
 }
@@ -139,9 +145,9 @@
   #urlbar-container {
     min-width: 206px !important;
   }
-  
+
   #nav-bar-customization-target:not(:hover) #downloads-button:not([open]) {
-  	visibility: collapse !important;
+    visibility: collapse !important;
   }
 }
 
@@ -158,9 +164,63 @@
   fill: var(--toolbar-field-color) !important;
 }
 
-#userContext-icons, #urlbar-zoom-button {
+#userContext-icons,
+#urlbar-zoom-button {
   padding-inline: var(--uc-urlbar-icon-inline-padding) !important;
   margin-block: 0 !important;
   margin-inline: 0 !important;
 }
-*/
+
+/* make urlbar icons opaque in default theme */
+#urlbar-input::placeholder,
+.searchbar-textbox::placeholder {
+  opacity: 0.6 !important;
+}
+
+:is(:root:not(:-moz-lwtheme), :root[style*="--lwt-accent-color: rgb(240, 240, 244)"]) #identity-icon-label {
+  opacity: var(--urlbar-icon-fill-opacity) !important;
+}
+
+/* remove background from urlbar box */
+#identity-box[pageproxystate="valid"].notSecureText>.identity-box-button:not(:hover, [open]),
+#identity-box[pageproxystate="valid"].chromeUI>.identity-box-button:not(:hover, [open]),
+#identity-box[pageproxystate="valid"].extensionPage>.identity-box-button:not(:hover, [open]) {
+  background-color: transparent !important;
+}
+
+/* increase space between icon and text */
+#identity-icon-label {
+  padding-inline-start: 8px !important;
+}
+
+/* separator for urlbar box */
+#identity-box {
+  position: relative;
+}
+
+:is(#identity-box[pageproxystate="valid"].notSecureText>.identity-box-button,
+  #identity-box[pageproxystate="valid"].chromeUI>.identity-box-button,
+  #identity-box[pageproxystate="valid"].extensionPage>.identity-box-button)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 16px;
+  border-right: 1px solid currentColor;
+  right: 0;
+  top: calc((var(--urlbar-height) / 2 - 1px - var(--urlbar-container-padding)) - 8px);
+  opacity: 0;
+}
+
+@media not (prefers-reduced-motion) {
+  :is(#identity-box[pageproxystate="valid"].notSecureText>.identity-box-button,
+    #identity-box[pageproxystate="valid"].chromeUI>.identity-box-button,
+    #identity-box[pageproxystate="valid"].extensionPage>.identity-box-button)::after {
+    transition: opacity 0.2s ease;
+  }
+}
+
+:is(#identity-box[pageproxystate="valid"].notSecureText>.identity-box-button:not(:hover, [open]),
+  #identity-box[pageproxystate="valid"].chromeUI>.identity-box-button:not(:hover, [open]),
+  #identity-box[pageproxystate="valid"].extensionPage>.identity-box-button:not(:hover, [open]))::after {
+  opacity: 0.375;
+}
