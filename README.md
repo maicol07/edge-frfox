@@ -63,6 +63,11 @@ To disable a tweak, set the key to `false` or delete it, then restart the browse
 |**NOTE: all functionality of this button can still be accessed from the app menu.**|
 |`uc.tweak.fxa-button-as-private-indicator`|
 
+|Show context menu navigation buttons (Back, Forward, Reload, etc.) vertically|
+|-|
+|**NOTE: labels are only shown in the English language.**|
+|`uc.tweak.vertical-context-navigation`|
+
 |remove tab separators|
 |-|
 |`uc.tweak.remove-tab-separators`|
@@ -70,6 +75,10 @@ To disable a tweak, set the key to `false` or delete it, then restart the browse
 |remove extra padding from permissions button (older functionality)|
 |-|
 |`uc.tweak.less-permissions-button-padding`|
+
+|disable custom context menus|
+|-|
+|`uc.tweak.revert-context-menu`|
 
 ## Mica Tweak Instructions (Windows 11 Only)
 1. Download and install [Mica For Everyone](https://github.com/MicaForEveryone/MicaForEveryone).
